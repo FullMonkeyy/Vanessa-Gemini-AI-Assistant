@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AudioMenager_GUI.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Canzoni_GUI.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Conversationhystory_GUI.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="FinestraCreazioneUtenteTelegram.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GUI_TelegramMenager.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ModifierMessage_GUI.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="NuovoTitolo_GUI.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VanessaBrainGUI.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VanessaGUI.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AudioMenager_GUI.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Canzoni_GUI.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Conversationhystory_GUI.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="FinestraCreazioneUtenteTelegram.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GUI_TelegramMenager.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ModifierMessage_GUI.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="NuovoTitolo_GUI.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VanessaBrainGUI.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VanessaGUI.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

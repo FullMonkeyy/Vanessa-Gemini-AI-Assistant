@@ -1,0 +1,86 @@
+﻿<UserControl x:Class="Progetto_Vanessa_Gemini_GUI.VanessaGUI"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Progetto_Vanessa_Gemini_GUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="720" d:DesignWidth="1280">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.1*"></ColumnDefinition>
+            <ColumnDefinition Width="0.002*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="0.08*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="0.08*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="0.08*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        
+        <Button Width="80" Height="80" Grid.Row="2" Click="TelegramClick">
+            <Button.Template>
+                <ControlTemplate>
+                    <Grid>
+                        <Image Source="/Resources/TelegramLogo.png" />
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button  Width="80" Height="80"  Grid.Row="4" Click="MusicClick">
+            <Button.Template>
+                <ControlTemplate>
+                    <Grid>
+                        <Image Source="/Resources/MusicLogo.jpg" />
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button   Width="80" Height="80" Click="VanessaClick" >
+            <Button.Template>
+                <ControlTemplate>
+                    <Grid>
+                        <Image   Source="/Resources/VanessaBrain.jpg" />
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button Width="80" Height="80" Grid.Row="6" Click="HistoryClick" >
+            <Button.Template>
+                <ControlTemplate>
+                    <Grid>
+                        <Image Source="/Resources/TimeLogo.png" />
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Rectangle Name="rect_brain" Grid.Row="0" Grid.Column="1" Fill="Black" ></Rectangle>
+        <Rectangle Grid.Row="1" Grid.Column="1" Fill="Black" ></Rectangle>
+        <Rectangle Name="rect_telegram"  Grid.Row="2" Grid.Column="1" Fill="Black" ></Rectangle>
+        <Rectangle Grid.Row="3" Grid.Column="1" Fill="Black" ></Rectangle>
+        <Rectangle Name="rect_music" Grid.Row="4" Grid.Column="1" Fill="Black" ></Rectangle>
+        <Rectangle Grid.Row="5" Grid.Column="1" Fill="Black" ></Rectangle>
+        <Rectangle Name="rect_Hystory" Grid.Row="6" Grid.Column="1" Fill="Black" ></Rectangle>
+        <Grid Name="User" Grid.Row="0" Grid.Column="2" Grid.RowSpan="7">
+            
+        </Grid>
+        <!--
+        <Rectangle Name="rect_brain" Grid.Row="0" Grid.Column="1" Fill="Black" ></Rectangle>
+        <Rectangle Grid.Row="1" Grid.Column="1" Fill="Black" ></Rectangle>
+        <Rectangle Name="rect_telegram"  Grid.Row="2" Grid.Column="1" Fill="Black" ></Rectangle>
+        <Rectangle Grid.Row="3" Grid.Column="1" Fill="Black" ></Rectangle>
+        <Rectangle Name="rect_music" Grid.Row="4" Grid.Column="1" Fill="Black" ></Rectangle>
+        <Rectangle Grid.Row="5" Grid.Column="1" Fill="Black" ></Rectangle>
+        <Rectangle Name="rect_Hystory" Grid.Row="6" Grid.Column="1" Fill="Black" ></Rectangle>
+        <Rectangle Grid.Row="1" Grid.Column="0" Fill="Black" ></Rectangle>
+        <Rectangle Grid.Row="3" Grid.Column="0" Fill="Black" ></Rectangle>
+        <Rectangle Grid.Row="5" Grid.Column="0" Fill="Black" ></Rectangle>
+        -->
+    </Grid>
+</UserControl>

@@ -1,0 +1,82 @@
+﻿<UserControl x:Class="Progetto_Vanessa_Gemini_GUI.AudioMenager_GUI"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Progetto_Vanessa_Gemini_GUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Loaded="UserControl_Loaded">
+    <UserControl.Resources>
+
+        <Style x:Key="CustomRaisedButton" TargetType="Button">
+            <Setter Property="Background" Value="White" />
+            <Setter Property="Foreground" Value="Black" />
+            <Setter Property="BorderBrush" Value="Gray" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="Padding" Value="12, 6" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="FontFamily" Value="Roboto" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="Border"
+                 Background="{TemplateBinding Background}"
+                 BorderBrush="{TemplateBinding BorderBrush}"
+                 BorderThickness="{TemplateBinding BorderThickness}"
+                 CornerRadius="4">
+                            <ContentPresenter x:Name="ContentPresenter"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Content="{TemplateBinding Content}"
+                               ContentStringFormat="{TemplateBinding ContentStringFormat}"
+                               ContentTemplate="{TemplateBinding ContentTemplate}"
+                               RecognizesAccessKey="True" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="LightGray" />
+                                <Setter Property="BorderBrush" Value="DarkGray" />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="Gray" />
+                                <Setter Property="BorderBrush" Value="DarkGray" />
+                                <Setter Property="Foreground" Value="White" />
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Background" Value="LightGray" />
+                                <Setter Property="BorderBrush" Value="LightGray" />
+                                <Setter Property="Foreground" Value="Gray" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="80" Margin="22,35,0,0" VerticalAlignment="Top" Width="995" Source="/Resources/VANESSAMUSICLOGO.png"/>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Hidden" Margin="29,138,20,37" >
+            <ListView  Name="LV_Music" BorderBrush="Transparent">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Border Background="AliceBlue" BorderBrush="Black" BorderThickness="2" Width="1050" CornerRadius="25" Margin="10,10,10,10" Padding="10">
+                            <StackPanel Orientation="Horizontal" Height="60">
+
+                                <TextBlock Text="{Binding}" VerticalAlignment="Center"></TextBlock>
+
+                                <Button Style="{StaticResource CustomRaisedButton}" 
+                        Tag="{Binding}" Margin="10,0,0,0" Width="60" Height="30" VerticalAlignment="Center" Content="Play" Click="PlaySong" MouseDoubleClick="RiavviaSong" />
+                                <Button Style="{StaticResource CustomRaisedButton}" 
+                        Tag="{Binding}" Margin="10,0,0,0" Width="60" Height="30" VerticalAlignment="Center" Content="Pause" Click="PauseSong"/>
+                                <Button Style="{StaticResource CustomRaisedButton}" 
+                            Tag="{Binding}" Margin="10,0,0,0" Width="100" Height="30" VerticalAlignment="Center" Content="Cambia nome" Click="CambiaNomeClick" />
+                            </StackPanel>
+                        </Border>
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+              
+            </ListView>
+        </ScrollViewer>
+    </Grid>
+</UserControl>
