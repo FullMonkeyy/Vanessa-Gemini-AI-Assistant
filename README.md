@@ -1,6 +1,5 @@
 # VanessaGemini
 Personal generative AI vocal assistant.
-Available soon...
 
 HERE A LINK OF THE DIMOSTRATION IN ITALIAN:
 
