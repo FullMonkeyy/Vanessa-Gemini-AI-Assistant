@@ -25,4 +25,8 @@
 <li class="my-0">📱 <strong>Real-time Messaging:</strong> Facilitates communication via Telegram, supporting user management and message synchronization.</li>
 <li class="my-0">⚙️ <strong>Modular &amp; Scalable:</strong> Ensures consistent environment setup and workflow flexibility for diverse project needs.</li>
 </ul>
-<hr></div></div></div>
+<br><hr>
+Here you can find the youtube video in italian to show Vanessa Gemini's function
+
+[Youtube Video](https://www.youtube.com/watch?v=9xRNCH3ql1U&t=677s&ab_channel=FullMoneky)
+</div></div></div>
